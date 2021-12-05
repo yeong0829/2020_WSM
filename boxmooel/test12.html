@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            float:left;
+            margin:5px;
+            
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #one{
+            background-color: aqua;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index:10;
+        }
+        #two{
+            background-color: blueviolet;
+            position:absolute;
+            left: 30px;
+            top: 30px;
+            z-index:1;
+        }
+        #three{
+            background-color: chartreuse;
+            position: absolute;
+            left: 60px;
+            top: 60px;
+            z-index:-2;
+        }
+        img{
+            position:absolute;
+            z-index:-1;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<!-- <img class='a' src='../img/lion3.JPG'>
+ <img src='../img/lion2.JPG'> -->
+ <!-- <a href='../img/lion3.JPG' height='300' target='_blank'><img class='a' src='../img/lion3.JPG'w1idth='100' height='100'/></a>
+<a href='../img/lion4.JPG' height='300' target='_blank'> <img class='a' src='../img/lion4.JPG'w1idth='100' height='100'/></a>
+ <img class='a' src='../img/lion2.JPG'w1idth='100' height='100'/>
+ <img class='a' src='../img/lion4.JPG'w1idth='100' height='100'/>
+ <img class='a' src='../img/lion3.JPG'w1idth='100' height='100'/>
+ <img class='a' src='../img/lion4.JPG'w1idth='100' height='100'/>
+ <img class='a' src='../img/lion2.JPG'w1idth='100' height='100'/> -->
+<div id='one'></div>
+<div id='two'></div>
+<div id='three'></div>
+<hr>
+<img class='a' src='../img/lion4.JPG'w1idth='100' height='100'/>
+<p>img요소의 z-index가 -1일 떄 위치는 앞일까요? 뒤일까요?</p>
+</body>
+</html>
