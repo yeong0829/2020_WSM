@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:disabled{
+            background:salmon;
+            border:1px seagreen;
+        }
+        input:checked + span{
+            color:rgb(51, 150, 100)
+        }
+    </style>
+
+</head>
+<body>
+    <p>사용자 정보
+        <input type='text' disabled>
+    </p>
+    <p>이 밑에 신청할 과목을 선택</p>
+    <label><input type='radio' name='sub'><span>HTML5</span></label>
+    <label><input type='radio' name='sub'><span>CSS3</span></label>
+    <label><input type='radio' name='sub'><span>Javaxcript</span></label>
+    <hr>
+    <form>
+        <input type='text' name='name' disabled><br>
+        <input type='text' name='ss ' required>
+        <input type='submit' value='전송'>
+    </form>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table tr td{
+            text-align:center;
+        }
+        table tr:nth-child(2n+1){
+            background-color:rgb(177, 177, 177)
+        }
+        table tr:nth-child(2n){
+            font-size:20px
+        }
+        table tr:hover{
+            background-color:chocolate;
+        }
+        ul li{
+            display: inline;
+            border:1px solid #333;
+            padding-left:10px;
+            padding-right:10px;
+        }
+        ul.nav li:first-child{
+            /*ul의 nav클래스의 li자손들 중에 첫번째 자식*/
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        /*ul.nav li:last-child{
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }*/
+        </style>
+</head>
+<body>
+    <table border width='450xp' height='150px'>
+        <tr>
+            <td>번호</td>
+            <td>이름</td>
+            <td>제목</td>
+            <td>조회수</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <ul class='nav'>
+        <li>Home</li>
+        <li>Trml5</li>
+        <li>Css3</li>
+        <li>JQuery</li>
+    </ul>
+
+   
+</body>
+</html>

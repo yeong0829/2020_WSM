@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+        /* a[href] {a태그의  href 속성에 적용해라.}
+        background-color: blueviolet; */
+        a[target='_blank'] {
+            background-color: burlywood;
+        }
+        a[class~='button'] {background-color:cyan;
+        border:1px solid gray;
+        box-shadow: rgba(0,0,0,4) 5px 5px;}
+        a[title|='us'] {
+            background-color: rgb(216, 198, 235);
+        }
+        a[title|='jap'] {
+            background-color: yellowgreen
+        }
+        a[title^='eng'] {
+            background-color:turquoise;
+        }
+        a[title^='jap']{
+            color:violet
+        }
+        a[href$='hwp'] {
+            color:teal
+        }
+        a[href$='xls']{
+            background-color:yellow
+        }
+     </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인 메뉴</a></li>
+        <li><a href='#'>HTML</a></li>
+        <li><a href='#'>CSS3</a></li>
+        <li><a href='#'>Javascript</a></li>
+    </ul>
+    <hr>
+    <h1>HTML5 표준안 사이트</h1>
+    <ul>
+        <li><a href='#' target='_blank'>HTML</a></li>
+        <li><a href='#'>CSS</a></li>
+        <li><a href='#'>media Query</a></li>
+    </ul>
+    <hr>
+    <ul>
+        <li><a href='#'>메뉴1</a></li>
+        <li><a href='#'>메뉴2</a></li>
+        <li><a href='#' class='button'>메뉴3</a></li>
+        <li><a href='#'class='flat button'>메뉴4</a></li>
+    </ul>
+    <hr>
+    <ul>
+        <li>외국어서비스</li>
+        <li><a href='#' title='us'> 영어</a></li>
+        <li><a href='#' title='us-english'>영어</a></li>
+        <li><a href='#' title='japanese'>일본어</a></li>
+        <hr>
+        <ul>
+            <li>외국어서비스</li>
+            <li><a href='#' title='english'> 영어</a></li>
+            <li><a href='#' title='japanese'>영어</a></li>
+            <li><a href='#' title='nor'>일본어</a></li>
+            <hr>
+            <ul>
+                
+                <li><a href='intro.hwp'> 한글</a></li>
+                <li><a href='intro.xls'>엑셀</a></li>
+
+</html>
