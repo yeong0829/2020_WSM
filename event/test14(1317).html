@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="checkbox" name="mane" value="Mike">Mike
+        <input type="checkbox" name="mane" value="Tom">Tom
+        <input type="checkbox" name="mane" value="Jane">Jane
+        <input type="checkbox" name="mane" value="Alice">Alice
+        <input type="checkbox" name="mane" value="Bill">Bill
+        <button type="button" onclick="func()">검색</button>
+    </form>
+    <script>
+        function func(){
+            var name=document.getElementsByName("name");
+            var cnt=0;
+            for(var i=0;i<name.length;i++){
+                if(name[i].checked == true){
+                    alert(name[i].value);
+                    cnt++;
+                }
+            }
+            alert(cnt + "개 선택");
+        }
+    </script>
+</body>
+</html>

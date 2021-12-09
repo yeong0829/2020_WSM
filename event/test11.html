@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload= function(){
+            document.getElementById("name").focus();
+        }
+        function checkfill(obj){
+            if(obj.value==""){
+                alert("Enter name");
+                obj.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        이름<input type="text" id="name" onblur="checkfill(this)"><br/>
+        <!-- 입력창에 blur이벤트가 발생하면 checkfull함수를 실행하는데 -->
+        <!-- 현재 객체를 같이 넘겨라  -->
+        비밀번호<input type="text">
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>선택된 도시 출력</h1><hr></form>
+    <form>
+        <input type="checkbox" name="city" value="서울">서울
+        <input type="checkbox" name="city" value="부산">부산
+        <input type="checkbox" name="city" value="춘천">춘천
+        <button type="button" onclick="city()">find checked</button><hr>
+    </form>
+    <script>
+        function city(){
+            var city=document.getElementsByName("city");
+            for (var i=0; i<city.length; i++) {
+                if (city[i].checked == true) {
+                    alert(city[i].value + "을 선택하였습니다.");
+                    break;
+                }
+            }
+        }
+    </script>
+    <br><br>
+    <hr>
+    <form>
+        <input type="checkbox" name="Fruit" value="사과">사과
+        <input type="checkbox" name="Fruit" value="딸기">딸기
+        <input type="checkbox" name="Fruit" value="레몬">레몬
+        <input type="checkbox" name="Fruit" value="망고">망고
+        <input type="checkbox" name="Fruit" value="메론">메론
+        <button type="button" onclick="fruit()">체크된 객체 value</button><hr>
+    </form>
+    <script>
+        function fruit(){
+            var fruit=document.getElementsByName("Fruit");
+            for(var i=0; i<fruit.length; i++){
+                if(fruit[i].checked){
+                    alert(fruit[i].value+ "을 선택하였습니다.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

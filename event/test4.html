@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>이벤트 핸들러 연습</h1>
+    <div id="firset1" onmouseover="this.style.backgroundColor='green'"
+                      onmouseout="this.style.backgroundColor='yellow'">1. 태그내에 작성</div><br>
+
+    <div id="first2">2. DOM객체 속성 사용</div><br>
+    <script>
+        var first2=document.querySelector("#first2");
+        first2.onmouseover=over;
+        function over(){
+            first2.style.background="green";
+        }
+        first2.onmouseout=out;
+        function out(){
+            first2.style.background="yellow";
+        }
+    </script>
+    <div id="first3">3. addEventListener</div><br>
+    <script>
+        var first3=document.getElementById("first3");
+        first3.addEventListener("mouseover", mouseover);
+        function mouseover(){
+            first3.style.backgroundColor="green";
+        }
+        first3.addEventListener("mouseout", mouseout);
+        function mouseout(){
+            first3.style.backgroundColor="yellow";
+        }
+    </script>
+    <div id="first4">4. 익명함수</div>
+    <script>
+        var first4=document.getElementById("first4");
+        first4.addEventListener("mouseover", function (){
+            first4.style.backgroundColor="green";
+        });
+        first4.addEventListener("mouseout",function (){
+            first4.style.backgroundColor="yellow";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1. 태그내에서 이벤트 헨들러 작성</h1>
+    마우스를 올렸을떄 배경색을 다저블루-onmouseover/
+    마우스 벗어났을 떄 배경색 핑크-onmouseout
+    <p id="first" onmouseover="this.style.backgroundColor='dodgerblue'"
+     onmouseout="this.style.backgroundColor='pink'">Javascript</p>
+     <p id="first1" onmouseover="this.style.Color='dodgerblue'"
+     onmouseout="this.style.Color='pink'">태그내에서 이벤트 헨들러 작성</p>
+     <hr>
+
+     <h1>2. DOM객체의 속성으로 이벤트 핸들러 작성</h1>
+     <p id="first2">DOM객체의 속성으로 이벤트 핸들러 작성</p>
+     <script>
+         var first2=document.querySelector("#first2");//first2의 타입:객체
+         first2.onmouseover=over;//객체의 속성으로 이벤트를 설정하고 이벤트 핸들러 대입
+         function over(){
+             first2.style.backgroundColor="green";
+         }
+         first2.onmouseout=out;
+         function out(){
+             first2.style.backgroundColor="yellow";
+         }
+    </script><hr>
+
+    <h1>3. addEventLister(이벤트이름, 이벤트핸들러) 사용</h1>
+    <p id="second">addEventLister(이벤트이름, 이벤트핸들러) 사용</p>
+    <script>
+        var second=document.getElementById("second");
+        second.addEventListener("mouseover", mouseover1);
+        function mouseover1(){
+            second.style.backgroundColor="salmon";
+        }
+        second.addEventListener("mouseout", mouseout1);
+        function mouseout1(){
+            second.style.backgroundColor="skyblue";
+        }
+    </script> <hr>
+
+    <h1>4. 익명함수 사용</h1>
+    <p id="third">익명함수 사용</p>
+    <script>
+        var third=document.getElementById("third");
+        third.addEventListener("mouseover", function (){
+            third.style.backgroundColor="red";
+        });
+        third.addEventListener("mouseout",function (){
+            third.style.backgroundColor="yellow";
+        });
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="first" type="button" onclick="func(event)">버튼1</button>
+    <!-- 버튼을 클랫했을 때 funt()함수 호출하는데 이벤트 정보가 담겨있는 event변수를 같이 넘긴다. -->
+    <button type="button">버튼2</button>
+    <script>
+        function func(e){
+            var first=document.getElementById("first");
+            document.body.style.backgroundColor="dodgerblue";
+        
+        console.log("e.type",e.type);
+        //발생한 이벤트이름 
+        console.log("e.currentTarget",e.currentTargt);
+        //이벤트를 방생시킨 주체
+        console.log("e.target",e.target);
+        }
+    </script>
+</body>
+</html>

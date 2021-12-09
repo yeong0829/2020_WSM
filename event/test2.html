@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initialscale=1.0">
+ <title>Document</title>
+ <style>
+ body{
+ color:dodgerblue;
+ }
+ </style>
+</head>
+<body>
+ <p id="first">Javascript1~!</p>
+ <button type="button" 
+    onclick="first.style.color='red';
+            first.style.fontWeight='bold';
+            first.style.background='yellow';
+            first.style.fontSize='1.2rem'">입력완료</button>
+<hr>
+ <p id="second">Javascript2~!</p>
+ <button id="btn" type="button">입력완료</button>
+<script>
+    var second=document.getElementById("second");
+        //객체                              태그
+    var btn=document.querySelector("#btn");
+
+    second.onclick=clickHandler;
+    function clickHandler(){
+        btn.do
+        second.style.background='dodgerblue';
+    }
+</script>
+<hr>
+ <p id="third">Javascript3~!</p>
+ <button id="btn3" type="button">입력완료</button>
+ <script>
+    var third=document.getElementById("thirde");
+    var btn3=document.querySelector("#btn3");
+    btn3.addEventListener("click",clickHandler);
+    function clickHandler(){
+        third.style.background="salmon";
+        third.style.color="white";
+    }
+</script>
+<hr>
+ <p id="forth">Javascript3~!</p>
+ <button id="btn4" type="button">입력완료</button>
+ <script>
+    var forth=document.getElementById("forth");
+    var btn4=document.getElementById("btn4");
+    btn4.addEventListener("click", function (){
+        forth.style.backgroundColor="red";
+        forth.style.color="white";
+    });
+</script>
+</body>
+</html>

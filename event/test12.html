@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        국어: <input type="text" name="kor/ id="kor"><br>
+        영어: <input type="text" name="eng" id="eng"/><br>
+        수학: <input type="text" name="math" id="math"/><br>
+        <button type="button" onlick="func();">입력완료</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        function func(){
+            var kor=document.getElementById("kor").value;
+            var eng=document.getElementById("eng").value;
+            var math=doument.getElementById("math").value;
+            var tot=parseInt(kor)+parseInt(eng1)+parseInt(math);
+            var avg=tot/3;
+            var result=document.getElementById("result");
+            result.innerHTML=tot+','+avg;
+                  //코드 정렬: ctrl+K+F
+            //console.log(kor.value, eng.value, math.value);
+        }
+    </script><hr>
+    <form>
+        <h1>좋아하는 과일을 선택하세요</h1>
+            <input type="radio" name="fruit" id="apple">apple
+            <input type="radio" name="fruit" id="banana">banana
+            <input type="radio" name="fruit" id="grape">grape
+            </br>
+        <h1>좋아하는 동물을 선택하세요</h1>
+            <input type="checkbox" name="animal" id="dog">grape
+            <input type="checkbox" name="animal" id="cow">cow
+            <input type="checkbox" name="animal" id="lion">lion
+        <button type="button" ontclick="func2()">입력완료</button>
+    </form> 
+    <div id="result2"></div>
+    <script>
+        var temp="";
+        function func2(){
+            var ruits=document.getElementsByName("fruit");
+            for(var i=0; i<fruits.length; i++) { 
+                if(fruits[i].checked==true){//선택이 되었음
+                    temp=fruits[i].value;
+                    console.log(temp);
+                    break;
+                }
+            }   
+            var result2=document.getElementById("result2");
+            result2.innerHTML=temp;
+        }
+    </script>
+</body>
+</html>

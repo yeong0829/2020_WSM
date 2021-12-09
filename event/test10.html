@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="img1" width="150px" heitht="150px" src="img/lion4.JPG">
+    <img id="img2" width="150px" heitht="150px"src="img/lion2.JPG">
+    <img id="img3" width="150px" heitht="150px"src="img/lion3.JPG">
+</body>
+<script>
+    var img1=document.getElementById("img1");
+    img1.addEventListener("mouseenter",function(e){
+        img1.src="img/i.JPG";
+        console.log(e.x+','+e.y);
+    })
+    img1.addEventListener("mouseleave",function(){
+        img1.src="img/c.JPG";
+    })
+    img1.addEventListener("wheel",function(e){
+        if(e.wheelDelta>0){
+            console.log("위 스크롤");
+        }else{
+            console.log("아래 스크롤");
+        }
+    })
+</script>
+</html>

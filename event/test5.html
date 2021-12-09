@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="radio" name='chk1' id='radio1' onclick="choice()">다저불루</br>
+        <input type="radio" name='chk1' id='radio2' onclick="choice()">그린엘로우
+    </form>
+    <script>
+        function choice(){
+            var color=document.getElementById("radio1");
+            if(color.checked){
+                document.body.style.backgroundColor="dodgerblue";
+            }else{
+                document.body.style.backgroundColor="greenyellow";
+            }
+        }
+    </script>
+</body>
+</html>
