@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align:center;
+            background-color:deepskyblue;
+            display:grid;
+            gap:1rem;
+            margin:0;
+            padding:0;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows:1fr;
+            grid-template-areas:
+            'a b b'
+            'a c c'
+        }
+        content{
+            background-color:deepskyblue;
+        }
+        .a{
+            background-color:chartreuse;
+            grid-area:a
+        }
+        .b{
+            background-color:coral;
+            grid-area:b
+        }
+        .c{
+            background-color:cyan;
+            grid-area:c
+        }
+        @media(min-width:480px){
+            body{
+                display:grid;
+                margin:0;
+                padding:0;
+                gap:1rem;
+                grid-template-columns:1fr;
+                grid-template-rows:1fr;
+                grid-template-areas:
+                'a '
+                'b'
+                'c'
+            }
+            .content{
+                background-color:deepskyblue;
+            }
+            .a{
+                background-color:chartreuse;
+                grid-area:a
+            }
+            .b{
+                background-color:coral;
+                grid-area:b
+            }
+            .c{
+                background-color:cyan;
+                grid-area:c
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='content'></div>
+        <div class='a'><h1>Section a</h1>out major page areas or small user interface elements. This article introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level 1 specification. The features shown in this overview will then be explained in greater detail in the rest of this guide. </div>
+        <div class='b'><h1>Section b</h1>out major page areas or small user interface elements. This article introduces the CSS Grid Layout and the new terminology that is part of the CSS Grid Layout Level 1 specification. The features shown in this overview will then be explained in greater detail in the rest of this guide. </div>
+    </div>
+</body>
+</html>

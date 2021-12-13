@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .container{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;  /*3칸*/
+            /* /* grid-template-columns: 200px 200px 200px 200px; 
+            grid-template-columns: 40% 60%;  
+            grid-template-columns: repeat(3, afr);  
+            grid-template-rows:200px 200px;*/
+            grid-template-rows:minmax(100px auto);
+            column-gap:30px;
+            row-gap:20px;
+        }
+        .items{
+            border:1px solid gray;
+        }
+        .items1{
+            background:burlywood;
+        }
+        .items2{
+            background:chartreuse;
+        }
+        .items3{
+            background:deeppink;
+        }
+        .items4{
+            background:cyan;
+        }
+        .items5{
+            background:darkorange;
+        }
+        h2{
+            display:grid;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='items items1'><h1>box1</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!</div>
+        <div class='items items2'><h1>box2</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!</div>
+        <div class='items items3'><h1>box3</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!
+        </div>
+        <div class='items items4'><h1>box4</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!</div>
+        <div class='items items5'><h1>box5</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, consequuntur!</div>
+       
+    </div>
+</body>
+</html>

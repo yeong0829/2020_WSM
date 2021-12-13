@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            gap:1rem;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-areas:
+                'html5 html5 html5'
+                'css3 css3 javascript'
+                'nodejs jquery jquery'
+        }
+        .item{
+            border:1px solid #333;
+        }
+        .html5{
+            grid-area:html5;
+            background-color:sandybrown;
+        }
+        .css3{
+            grid-area:css3;
+            background-color:seagreen;
+        }
+        .javascript{
+            grid-area:javascript;
+            background-color:skyblue;
+        }
+        .nodejs{
+            grid-area:nodejs;
+            background-color:blueviolet;
+        }
+        .jquery{
+            grid-area:jquery;
+            background-color:crimson;
+        }
+        @media(max-width:680px;){
+            .container{
+            display:grid;
+            gap:1rem;
+            grid-template-columns:1fr;
+            grid-template-areas:
+                'html5 html5 html5'
+                'css3 css3 javascript'
+                'nodejs jquery jquery'
+            }
+            .html5{
+                grid-area:html5;
+                background-color:sandybrown;
+            }
+            .css3{
+                grid-area:css3;
+                background-color:seagreen;
+            }
+            .javascript{
+                grid-area:javascript;
+                background-color:skyblue;
+            }
+            .nodejs{
+                grid-area:nodejs;
+                background-color:blueviolet;
+            }
+            .jquery{
+                grid-area:jquery;
+                background-color:crimson;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div class='item html5'>HTML5</div>
+        <div class='item css3'>CSS3</div>
+        <div class='item javascript'>Javascript</div>
+        <div class='item nodejs'>Nodejs</div>
+        <div class='item jquery'>JQuery</div>
+    </div>
+    <!-- Emmet 기능
+    <div class="item1">html</div>
+    <div class="item2">CSS3</div>
+    <ul>
+        <li></li>
+        <li></li>
+    </ul> -->
+</body>
+</html>
