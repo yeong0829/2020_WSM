@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date 객체</h1>
+    <script>
+        let today= new Date();
+        //let today = new getFullTear();
+        //Date객체를 만들어서 todat에 대입함
+        document.write("오늘의 시간은"+today.toLocaleDateString());
+        document.write("년도: "+today.getFullYear()+"<br/>");
+        document.write("달: "+today.getMonth()+"<br/>");
+        document.write("일: "+today.getDate()+"<br/>");
+        document.write("요일: "+today.getDay()+"<br/>");
+        document.write('시간: '+ today.getHours()+"<br/>");
+        document.write("분: "+today.getMinutes()+"<br/>");
+        document.write("초: "+today.getSeconds()+"<br/>");
+        let day = today.getDay();
+        switch(day){
+            case 1: document.write("월요일"); break;
+            case 2: document.write("화요일"); break;
+            case 3: document.write("수요일"); break;
+            case 4: document.write("목요일"); break;
+            case 5: document.worte("금요일"); break;
+            case 6: document,write("토요일"); break;
+            case 0: document.write("일요일"); break;
+        }
+        let seconds = today.getSeconds();
+        if(seconds%2==0){
+            document.body.style.backgroundColor="salmon";
+        }else{
+            document.body.style.backgroundColor="yellowgreen";
+        }
+    </script>
+</body>
+</html>

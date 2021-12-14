@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>자바스크립트</h1>
+    <button type="button" onclick="alert('hi javascript')";>버튼</button>
+    <script>
+        document.write("<h1>Hello javascript</h1>");
+        document.writeln("hello<br>");
+        document.writeln('javascript');
+    </script>
+    <hr>
+    <script>
+        //var name=prompt("아이디 입력:");
+        //prompt 함수에서 받은 값을 name에 대입해라
+        // if(name==null){ //unll은 값이 있으며 0이 아니다./취소 버튼을 눌렀거나 
+        // //창을 닫은 경우
+        //     document.write("취소버튼을 누르셨습니다.");
+        // }else if(name=='kim'){
+        //     document.write("아이디는"+ name+"입니다.");
+        // }else{
+        //     document.write("입력되지 않았습니다.");
+        // }
+
+        // var num1=prompt("값1 입력:");//prompt으로 받은 값은 문자
+        // var num1=parseInt(num1);
+        // var num2=prompt("값2 입력:");
+        // var num2=parseInt(num2);
+        // document.write(num1+num2);
+    </script>
+
+    <h3>Confirm 함수</h3>
+    <script>
+        var answer=confirm("정말 종료하시겠습니까?");
+        //확인 클릭할시에는 answer=true/ 취소 클릭시 answer=false
+        if(answer==true){
+            document.write("확인버튼 누르셨습니다.");
+        }else{
+            document.write('취소버튼 누르셨습니다.');
+        }
+    </script>
+</body>
+</html>

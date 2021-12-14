@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //x부터 y까지의 합 구하기
+    //x를 받아서 홀수/짝수 판단하기 
+    <script>
+        function sum(x,y){
+            var sum;
+            for(var i=x; i<=y; i++){
+                sum +=i;
+            }
+            document.write(sum);
+        }
+        function even_odd(x){
+            if(x%2==0){
+                documet.write("짝수");
+            }else{
+                documet.write("홀수");
+            }
+        }
+        sum(2,4);
+        even_odd(5);
+    </script>
+    
+</body>
+</html>

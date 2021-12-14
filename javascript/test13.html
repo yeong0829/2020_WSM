@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB - CSS</title>
+  <meta charset="utf-8">
+ <style>
+     #grid{
+         display: grid;
+         grid-template-columns: 300px 1fr;
+     }
+     
+     body{
+         margin:0px;
+     }
+     h1{
+         text-align: center;
+        border-bottom:1px solid yellow;
+         margin: 0;
+         padding: 30;
+         font-size: 50;
+     }
+     a:link{
+         text-decoration: none;
+         color:orange;
+     }
+    ol{
+       border-right:1px solid lime;
+        width:200px;
+         margin:0px;
+        padding-top: 20px;
+        padding-left: 30px;
+     } 
+   @media(max-width: 480px){
+    #grid{
+         display: block;
+     }
+     
+     body{
+         margin:0px;
+     }
+     h1{
+         text-align: center;
+         padding: 30;
+         font-size: 50;
+         border:none;
+     }
+     a:link{
+         text-decoration: none;
+         color:orange;
+     }
+    ol{
+        width:200px;
+         margin:0px;
+        padding-top: 20px;
+        padding-left: 30px;-
+        border: none;
+        
+     } 
+   }
+ </style>
+ <script>
+     function func(name){
+        switch(name){
+            case 'html':document.getElementById('article').innerHTML='HTML is........'; break;
+            case 'css': document.getElementById('article').innerHTML='CSS is...........'; break;
+            case 'javascript': document.getElementById('article').innerHTML='javascirpt is...........'; break;
+        }
+     }
+ </script>
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+    <div id="container">
+  <div id="grid">
+    <ol>
+        <li><a onclick="func('html')">HTML</a></li>
+        <li><a onclick="func('css')">CSS</a></li>
+        <li><a onclick="func('javascript')">JavaScript</a></li>
+    </ol>
+    <div id="article">
+        <p>
+            Welcome!!!
+        </p>
+    </div>
+  </div>
+</div>
+  </body>
+  </html>

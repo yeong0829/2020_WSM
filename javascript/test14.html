@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dom 객체 찾기</h1>
+    <ul>
+        <li id="first">Apple</li>
+        <li>banana</li>
+        <li>grape</li>
+    </ul>
+    <ol>
+        <li>sheep</li>
+        <li class="second">cat</li>
+        <li id="third" class="forth">dog</li>
+    </ol>
+    <script>
+        var firstli=document.getElementById("firstli");//아이디로 찾기
+        //   li객체                           태그
+        console.log(reistli);
+        var secondli=doucment.getElementsByClassName("second");//클래스 이름으로 찾기
+        console.log(secondli);
+        var liTag=document.getElementsByTagName("li");//태그이름으로 찾기-해당 모든 태그가 나옴
+        console.log(liTag);
+        for(var i=0; i<li.length; i++){
+            console.log(li[i]);
+        }
+        var thirdId=document.querySelector("#third");//querySelector로 찾기-아이디가 third를 찾기
+        thirdId.style.color="red";
+        var firstclass=document.querSelector(".first");
+        firstclass.style.backgroundColor="bule";
+        var li=document.querySelector('li');
+        console.log(li);
+        var liall=document.querySelectorAll('li');//모두 가져오기
+        for(var i=0; i<liall.length; i++){
+            console.log(liall[i]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>두 수를 더하는 함수 만들기</h1>
+    <script>//1
+        function add(){//3과 5를 더하는 함수-2
+            document.write(3+5);//3
+        }//4
+        add();//5
+        document.write("Hello");//6
+        //실행 순서:1-2-5-3-4-6
+        function sub(){
+            document.write(5-3);
+        }
+        sub();
+        function add2(x,y){
+            document.write(x+y);
+        }
+        function add3(x,y,z){
+            return(x+y+z);//x,y,z를 더해서 돌려준다. 
+        }
+        add2(10,20);
+        var result=add3(1,2,3);
+        document.write(add3(1,2,3));
+    </script>
+</body>
+</html>

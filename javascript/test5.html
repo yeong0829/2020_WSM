@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>1번</h1>
+    <script>
+        var x=parseInt(x);
+        x=32;
+        documet.write("x/10:"+(x/10));
+        documet.write("x%2:"+(x%2));
+        documet.write("x의 제곱:"+(x*x));
+        <h1>2번</h1>
+        var i = parseInt(i);
+        var sum = parseInt(sum);
+        for(i=0; i<=10; i++){
+                sum+=i;
+            document.wrtie("1부터 10까지의 짝수의 합:"+sum);
+        }
+        <h1>3번</h1>
+        var i = parseInt(i);
+        var sum = parseInt(sum);
+        for(i=0; i<=10; i++){
+            if(i%2==0){
+                sum+=i;
+            }
+            document.wrtie("1부터 10까지의 짝수의 합:"+sum);
+        }
+        <h1>4번</h1>
+        var i = parseInt(i);
+        var sum = parseInt(sum);
+        for(i=0; i<=100; i++){
+            if(i%2==0){
+                sum+=i;
+            }
+            document.wrtie("1부터 100까지의 짝수의 합:"+sum);
+        }
+        <h1>5번</h1>
+        var num=prompt("값1 입력:");
+        if(num%2==0){
+            document.write("입력한 숫자"+num+"은 짝수입니다.");
+        }else{
+            document.write("입력한 숫자"+num+"은 홀수입니다.");
+        }
+    </script><hr>
+     <!-- <h1>6번</h1>
+     <script>
+         var n=prompt("n 입력:");
+         var m=prompt("m 입력:");
+     </script> -->
+    <!--2번 1부터 10까지의 합 출력
+    3번 1부터 10사이의 짝수 홀수 출력
+    4번 1부터 100사이의 짝수의 합 출력
+    5번 값을 입력받아서 짝수인지 홀수인지 판별(prompt()사용)
+    6번 두 수를 입력받아(n,m)n부터m사이의 합 출력 -->
+    <script>
+        <h1>1번</h1>
+        let a = parseInt(a);
+        let b = parseInt(b);
+        a=3
+        b=5
+        document.weite(b-a);
+        <h1>2번</h1>
+        var num=prompt("점수 입력:");
+        switch(num%10){
+            case 9:document.write("A<br>"); break;
+            case 8:document.write("B<br>"); break;
+            case 7:document.write("C<br>"); break;
+            case 6: case 5: case 4: case 3: case 2: case 1: 
+                document.write("F<br>"); break;
+        }
+
+        var coffe=prompt("주문할 커피:");
+        if(coffe=='espresso'){
+            document.write("2000원입니다.<br>");
+        }else if(coffe=='에스프레소'){
+            document.write('2000원입니다.<br>');
+        }else if(coffe=='카푸치노'){
+            document.write('3000원입니다<br>.');
+        }else if(coffe=='카페라떼'){
+            document.write('3500원입니다.<br>');
+        }
+ 
+        var n=prompt("요일 입력:");
+        if(n='월' && '화' && '수' && '목' && '금'){
+            document.write("출근<br>");
+        }else if(n='토' && '일'){
+            document.write("휴일<br>");
+        }
+    </script>
+</body>
+</html>
