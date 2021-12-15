@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+           color:gold;
+           border:5px solid gold;
+           float:left;
+           box-sizing:border-box;
+           height:200px;
+           width:200px;
+           text-align:center;
+           text-t
+       }
+       @media(max-width:480px){
+           .a{
+            border:5px solid rgb(76, 207, 104);
+            color:rgb(111, 76, 207);
+           }
+       }
+       @media(min-width:481px) and (max-width:768px){
+            .a{
+                border:5px solid rgb(111, 76, 207);
+                color: rgb(111, 76, 207);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class='a'>box1</div>
+    <div class='a'>box1</div>
+    <div class='a'>box1</div>
+    <div class='a'>box1</div>
+</body>
+</html>
